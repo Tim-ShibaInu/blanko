@@ -101,6 +101,7 @@
 .cover__image {
   position: absolute;
   z-index: 0;
+  margin: 0 8px;
   right: 17vw;
   bottom: 0;
 }
