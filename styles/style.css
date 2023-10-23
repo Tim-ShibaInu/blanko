@@ -122,6 +122,9 @@
   margin-bottom: 27px;
 }
 
+.cover__description {
+  margin-bottom: 22px;
+}
 /* * Cover button list START*/
 .cover__button-list {
   display: flex;
