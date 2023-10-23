@@ -219,7 +219,7 @@
 
 /* Image loading failed START */
 .header__logo:before {
-  content: "Blanko";
+  content: "blanko";
   display: block;
   font-size: 24px;
   font-weight: bold;
