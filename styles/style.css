@@ -198,6 +198,7 @@
   display: flex;
   flex-direction: row;
   gap: 16px 24px;
+  margin-right: 35px;
 }
 
 .profits__list-image {
@@ -212,8 +213,18 @@
   flex-direction: column;
   row-gap: 12px;
   max-width: 257px;
-  margin-right: 35px;
-  justify-content: end;
+}
+
+.profit__heading {
+  margin-top: 5px;
+}
+
+
+.profits__list-item:hover {
+  background-color: #FF7143;
+  color: white;
+  border-radius: 0 0 8px 8px;
+  transition-duration: .5s;
 }
 /* ! Profits END */
 
