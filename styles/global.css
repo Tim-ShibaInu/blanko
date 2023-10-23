@@ -25,6 +25,6 @@ button {
   border: unset;
 }
 
-button {
+button, img {
   user-select: none;
 }
