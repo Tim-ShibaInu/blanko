@@ -1,0 +1,172 @@
+.section__theme-terracotta  {
+  background-color: #FF7143;
+  color: black;
+}
+
+.section__theme-white {
+  background-color: white;
+  color: black;
+}
+
+
+/* ! header START */
+.header {
+  position: relative;
+  display: flex;
+  z-index: 2;
+  justify-content: space-between;
+  padding: 16px 17vw;
+  margin: auto;
+  background-color: black;
+
+}
+
+.header__logo-and-address { 
+  display: flex;
+  align-items: center;
+  column-gap: 65px;
+}
+
+.header__logo:before {
+  content: "Blanko";
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.header__address {
+  background-color: rgba(255, 255, 255, 0.12);
+  padding: 4px 14px 4px 8px;
+  border-radius: 4px;
+}
+
+.header__address:hover, .header__button:hover {
+  color: #FF7143;
+  background-color: black;
+  transition-duration: .2s;
+}
+
+.header__address:active, .header__button:active {
+  color: white;
+  transition-duration: 0ms;
+}
+
+.header__button-section {
+  display: flex;
+  align-items: center;
+}
+/* * Header button START */
+.header__button {
+  display: flex;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  padding: 12px 32px;
+  color: black;
+  background-color: #FF7143;
+  border-radius: 6px;
+  margin-left: 45px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+}
+/* * Header button END  */
+
+/* * Navigation in header START */
+.header__navigation-list {
+  display: flex;
+  column-gap: 20px;
+  list-style-type: none;
+}
+
+.header__navigation-list-item:hover {
+  color: #FF7143;
+  transition-duration: .2s;
+}
+
+.header__navigation-list-item:active {
+  color: white;
+  transition-duration: 0ms;
+}
+/* * Navigation in header END */
+/* ! header END */
+
+/* ! cover START */
+.cover {
+  position: relative;
+  height: 69vh;
+  padding: 0 17vw;
+}
+
+.cover__image {
+  position: absolute;
+  z-index: 0;
+  right: 17vw;
+  bottom: 0;
+}
+
+.cover__text-section {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  row-gap: 10px;
+  text-align: center;
+  justify-content: center;
+  max-width: 587px;
+  height: 100%;
+  background-color: #FF7143;
+  font-size: 18px;
+}
+
+.cover__title {
+  font-size: 72px;
+  line-height: 72px;
+}
+
+/* ! cover END */
+
+
+
+/* ! cover START */
+.profits {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 51px;
+  padding: 80px 0;
+}
+/* ! cover END */
+
+@media (max-width: 1525px) {
+  .cover {
+    padding: 0;
+  }
+  .cover__text-section {
+    margin: auto;
+  }
+  
+  .cover__image {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .header {
+    width: unset;
+    padding: 16px;
+  }
+}
+
+@media (min-width: 801px) {
+  .show-more {
+    display: none;
+  }
+}
+
+@media (max-width: 801px) {
+  .header__button-section, .header__address {
+    display: none;
+  }
+}

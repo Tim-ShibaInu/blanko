@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: black;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  line-height: 24px;
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+a,
+button {
+  color: unset;
+  text-decoration: unset;
+  font-style: normal;
+  background-color: unset;
+  border: unset;
+}
+

@@ -1,0 +1,21 @@
+/* * Roboto */
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto'),
+  url(Roboto/Roboto-Regular.woff2) format('woff2'),
+  url(Roboto/Roboto-Regular.woff) format('woff'),
+  url(Roboto/Roboto-Regular.ttf) format('truetype');
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto'),
+  url(Roboto/Roboto-Bold.woff2) format('woff2'),
+  url(Roboto/Roboto-Bold.woff) format('woff'),
+  url(Roboto/Roboto-Bold.ttf) format('truetype');
+  font-display: swap;
+  font-weight: bold;
+}
+/* * Roboto */
