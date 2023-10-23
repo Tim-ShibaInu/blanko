@@ -199,6 +199,7 @@
   flex-direction: row;
   gap: 16px 24px;
   margin-right: 35px;
+  transition-duration: .25s;
 }
 
 .profits__list-image {
@@ -224,9 +225,69 @@
   background-color: #FF7143;
   color: white;
   border-radius: 0 0 8px 8px;
-  transition-duration: .5s;
+  transition-duration: .25s;
 }
 /* ! Profits END */
+
+/* ! Quotes START*/
+.quotes {
+  height: 603px;
+  display: flex;
+}
+
+.quotes__block {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  max-width: 603px;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+}
+
+.quotes__logo {
+  width: 100px;
+  height: 20px;
+  margin-bottom: 10px;
+}
+
+.quotes__quote {
+  font-size: 40px;
+  line-height: 48px;
+  margin-bottom: 10px;
+  padding: 0 16px;
+}
+
+.quotes__author {
+  font-weight: 700;
+  line-height: 27px;
+}
+
+.quotes__author__about-author {
+  font-weight: 400;
+  line-height: 24px;
+  color: rgba(255, 255, 255, .7);
+}
+
+/* * Quotes list buttons START */
+.quotes__button-list {
+  list-style-type: none;
+  display: flex;
+  column-gap: 6px;
+}
+
+.quotes__button-list__button {
+  background-color: rgba(255, 255, 255, .4);
+  width: 16px;
+  height: 16px;
+}
+
+.quotes__button-list__button-active {
+  background-color: white;
+}
+/* * Quotes list buttons START */
+/* ! Quotes START*/
 
 /* Image loading failed START */
 .header__logo:before {
@@ -264,7 +325,7 @@
   }
 }
 
-@media (max-width: 1525px) {
+@media (max-width: 1580px) {
   .cover {
     padding: 0;
   }
@@ -278,6 +339,7 @@
 }
 
 @media (max-width: 465px) {
+  /* cover */
   .cover__button-list__item {
     width: 100%;
   }
@@ -285,17 +347,7 @@
   .cover__button-list__button {
     font-size: 16px;
   }
-}
-
-@media (max-width: 325px) {
-  .cover__title {
-    font-size: 48px;
-    line-height: normal;
-    margin-bottom: 16px;
-  }
-}
-
-@media (max-width: 465px) {
+  /* profits */
   .profits__list-item {
     flex-direction: column;
   }
@@ -309,5 +361,42 @@
   .profits__list-item {
     margin-left: 16px;
   }
+  /* quotes */
+  .quotes {
+    height: 317px;
+  }
+  
+  .quotes__block {
+    row-gap: 16px;
+  }
+
+  .quotes__logo {
+    width: 50px;
+    height: 10px;
+    margin-bottom: 8px;
+  }
+  
+  .quotes__quote {
+    font-size: 20px;
+    line-height: 140%;
+    margin-bottom: 8px;
+  }
+
+  .quotes__author {
+    font-size: 16px;
+  }
+
+  .quotes__author__about-author {
+    font-size: 14px  ;
+  }
 }
+
+@media (max-width: 325px) {
+  .cover__title {
+    font-size: 48px;
+    line-height: normal;
+    margin-bottom: 16px;
+  }
+}
+
 /* Media END */
