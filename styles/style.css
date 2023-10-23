@@ -186,7 +186,35 @@
 /* ! cover END */
 
 /* ! Profits START */
+.profits__list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  justify-content: center;
+}
 
+.profits__list-item {
+  display: flex;
+  flex-direction: row;
+  gap: 16px 24px;
+}
+
+.profits__list-image {
+  background-color: #FDE7DA;
+  width: 48px;
+  height: 48px;
+  padding: 26px;
+}
+
+.profits__list__text-section {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  max-width: 257px;
+  margin-right: 35px;
+  justify-content: end;
+}
 /* ! Profits END */
 
 /* Image loading failed START */
@@ -253,6 +281,22 @@
     font-size: 48px;
     line-height: normal;
     margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 465px) {
+  .profits__list-item {
+    flex-direction: column;
+  }
+  
+  .profits__list-image {
+    width: 32px;
+    height: 32px;
+    padding: 9px;
+  }
+
+  .profits__list-item {
+    margin-left: 16px;
   }
 }
 /* Media END */
