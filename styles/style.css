@@ -88,7 +88,10 @@
 /* ! cover START */
 .cover {
   position: relative;
-  height: 69vh;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  min-height: 69vh;
   padding: 0 17vw;
 }
 
@@ -101,18 +104,15 @@
 }
 
 .cover__info-section {
-  position: relative;
-  z-index: 2;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   row-gap: 10px;
   text-align: center;
-  justify-content: center;
+  align-items: center;
   max-width: 587px;
   height: 100%;
   padding: 0 16px;
-  background-color: #FF7143;
   font-size: 18px;
 }
 
