@@ -178,7 +178,7 @@
 
 /* ! cover END */
 
-/* ! cover START */
+/* ! Profits START */
 .profits {
   display: flex;
   justify-content: center;
@@ -186,9 +186,7 @@
   gap: 51px;
   padding: 80px 0;
 }
-/* ! cover END */
-
-/* ! Profits START */
+ 
 .profits__list {
   list-style-type: none;
   display: flex;
