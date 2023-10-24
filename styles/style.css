@@ -292,6 +292,58 @@
 /* * Quotes list buttons START */
 /* ! Quotes START*/
 
+/* ! Landing START*/
+.landing {
+  display: flex;
+  flex-direction: column;
+  padding: 100px 16px;
+  align-items: center;
+}
+
+.content-box {
+  max-width: 1280px;
+}
+
+.landing__heading {
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.landing__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  list-style: none;
+  
+}
+
+.landing__list-item__link {
+  display: flex;
+  flex-direction: column;
+}
+
+.landing__list-item__image {
+  background-color: black;
+  max-width: 334px;
+  padding: 40px 40px 0 40px;
+  border-radius: 6px 6px 0 0;
+}
+
+.landing__list-item__text-section {
+  border: 1px solid gray;
+  border-top: 0;
+  border-radius: 0 0 6px 6px;
+  padding: 25px 32px;
+}
+
+.landing__list-item__heading {
+  font-size: 20px;
+  line-height: 28px;
+}
+/* ! Landing END*/
+
 /* Image loading failed START */
 .header__logo:before {
   content: "blanko";
@@ -339,6 +391,20 @@
   .cover__image {
     display: none;
   }
+}
+
+@media (max-width: 1309px) {
+  .landing__list {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 552px) {
+  .landing__list-item__image {
+    width: 256px;
+    padding: 16px 16px 0 16px;
+  }
+
 }
 
 @media (max-width: 465px) {
