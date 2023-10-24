@@ -364,6 +364,19 @@
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
+  transition-duration: .2s;
+}
+
+.footer__button:hover {
+  background-color: black;
+  color: #FF7143;
+  transition-duration: .2s;
+}
+
+.footer__button:active {
+  background-color: black;
+  color: white;
+  transition-duration: .0ms;
 }
 
 .footer__navigation-and-socials {
@@ -412,6 +425,20 @@
 .designers-name {
   color: #FF7143;
   margin-left: 4px;
+}
+
+.footer__contact-button {
+  transition-duration: .2s;
+}
+
+.footer__contact-button:hover {
+  color: #FF7143;
+  transition-duration: .2s;
+}
+
+.footer__contact-button:active {
+  color: white;
+  transition-duration: .0ms;
 }
 /* ! Footer END*/
 
