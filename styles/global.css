@@ -16,6 +16,10 @@ body {
   width: 0;
 }
 
+a {
+
+}
+
 a,
 button {
   color: unset;
@@ -27,4 +31,8 @@ button {
 
 button, img {
   user-select: none;
+}
+
+img {
+  display: block;
 }

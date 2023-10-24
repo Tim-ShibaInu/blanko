@@ -66,23 +66,23 @@
 }
 /* * Header button END  */
 
-/* * Navigation in header START */
-.header__navigation-list {
+/* * Navigation START */
+.navigation-list {
   display: flex;
   column-gap: 20px;
   list-style-type: none;
 }
 
-.header__navigation-list-item:hover {
+.navigation-list-item:hover {
   color: #FF7143;
   transition-duration: .2s;
 }
 
-.header__navigation-list-item:active {
+.navigation-list-item:active {
   color: white;
   transition-duration: 0ms;
 }
-/* * Navigation in header END */
+/* * Navigation END */
 /* ! header END */
 
 /* ! cover START */
@@ -344,8 +344,79 @@
 }
 /* ! Landing END*/
 
+/* ! Footer START*/
+.footer {
+  padding: 32px 17vw 0;
+}
+
+.footer__logo-and-button {
+  display: flex;
+  margin: 32px 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__button {
+  background-color: white;
+  color: black;
+  padding: 12px 32px;
+  border-radius: 6px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.footer__navigation-and-socials {
+  padding: 32px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, .1);
+}
+
+.footer__socials__list {
+  display: flex;
+  column-gap: 8px;
+  list-style: none;
+}
+
+.footer__socials__list-item {
+  display: flex;
+  background-color: rgba(255, 255, 255, .1);
+  width: min-content;
+  min-width: 48px;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__contacts {
+  display: flex;
+  align-items: center;
+
+  padding: 29px 0;
+  justify-content: space-between;
+}
+
+.footer__contacts-list {
+  display: flex;
+  list-style: none;
+  column-gap: 12px;
+}
+
+.footer__contacts-list-item {
+  display: flex;
+  column-gap: 12px;
+}
+
+.designers-name {
+  color: #FF7143;
+  margin-left: 4px;
+}
+/* ! Footer END*/
+
 /* Image loading failed START */
-.header__logo:before {
+.logo:before {
   content: "blanko";
   display: block;
   font-size: 24px;
@@ -357,6 +428,30 @@
   font-size: 24px;
   font-weight: bold;
   letter-spacing: 3px;
+}
+
+.instagram:before {
+  content: "Instagram";
+  font-size: 16px;
+  font-weight: bold;
+  justify-content: center;
+  padding: 0 8px;
+}
+
+.x:before {
+  content: "Twitter";
+  font-size: 16px;
+  font-weight: bold;
+  justify-content: center;
+  padding: 0 8px;
+}
+
+.facebook:before {
+  content: "Facebook";
+  font-size: 16px;
+  font-weight: bold;
+  justify-content: center;
+  padding: 0 8px;
 }
 /* Image loading failed END */
 
