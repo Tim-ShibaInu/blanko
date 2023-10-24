@@ -23,6 +23,7 @@ button {
   font-style: normal;
   background-color: unset;
   border: unset;
+  cursor: pointer;
 }
 
 button, img {
